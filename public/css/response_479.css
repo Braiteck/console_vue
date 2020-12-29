@@ -1,0 +1,39 @@
+@media (max-width: 479px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+
+
+
+    /*-----------------
+        Grid blocks
+    -----------------*/
+    .grid_blocks
+    {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    .grid_blocks .block.crash + .block
+    {
+        grid-column: auto;
+    }
+
+
+
+    /*------------
+        Charts
+    ------------*/
+    .charts .block .stats
+    {
+        margin-top: 3px;
+        margin-left: -25px;
+    }
+}

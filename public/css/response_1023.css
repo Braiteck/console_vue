@@ -1,0 +1,42 @@
+@media print, (max-width: 1023px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    .content_flex .content,
+    .show_sidebar .content_flex .content
+    {
+        width: 100%;
+        padding: 20px 20px 80px;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+    aside
+    {
+        display: none;
+    }
+
+
+
+    /*--------------
+        Mob date
+    --------------*/
+    .mob_date
+    {
+        display: block;
+    }
+
+
+
+    /*--------------
+        Mob menu
+    --------------*/
+    .mob_menu
+    {
+        display: block;
+    }
+}

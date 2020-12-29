@@ -1,17 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <!-- Адаптирование страницы для мобильных устройств -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Запрет распознования номера телефона -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+    <!-- Заголовок страницы -->
     <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
+
+    <!-- Данное значение часто используют(использовали) поисковые системы -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Изменение цвета панели моб. браузера -->
+    <meta name="msapplication-TileColor" content="#2498fb">
+    <meta name="theme-color" content="#2498fb">
+
+    <!-- Подключение файлов стилей -->
+    <link rel="stylesheet" href="<%= BASE_URL %>css/styles.css">
+
+    <link rel="stylesheet" href="<%= BASE_URL %>css/response_1899.css" media="print, (max-width: 1899px)">
+    <link rel="stylesheet" href="<%= BASE_URL %>css/response_1279.css" media="print, (max-width: 1279px)">
+    <link rel="stylesheet" href="<%= BASE_URL %>css/response_1023.css" media="print, (max-width: 1023px)">
+    <link rel="stylesheet" href="<%= BASE_URL %>css/response_767.css" media="print, (max-width: 767px)">
+    <link rel="stylesheet" href="<%= BASE_URL %>css/response_479.css" media="(max-width: 479px)">
+    </head>
+
+    <body>
+        <section id="app"></section>
+        <script src="<%= BASE_URL %>js/functions.js"></script>
   </body>
 </html>

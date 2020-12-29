@@ -1,0 +1,203 @@
+@media print, (max-width: 1899px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --sidebar_width: 280px;
+        --font_size: 16px;
+    }
+
+
+    .content_flex .content
+    {
+        padding: 30px;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+    aside .scroll
+    {
+        padding: 30px;
+    }
+
+    aside .bottom
+    {
+        margin-top: 30px;
+    }
+
+
+    aside .date_time
+    {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    aside .date_time .time
+    {
+        font-size: 42px;
+        line-height: 50px;
+
+        margin-top: 0;
+    }
+
+
+
+    aside .site_name
+    {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+
+
+    aside .menu .item > a,
+    aside .menu .sub_menu a
+    {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+
+
+    aside .toggle_show
+    {
+        bottom: 30px;
+
+        width: 60px;
+        height: 60px;
+        padding-right: 7px;
+
+        border-radius: 0 30px 30px 0;
+    }
+
+    aside .toggle_show span
+    {
+        width: 28px;
+    }
+
+    aside .toggle_show span:after
+    {
+        width: 14px;
+        height: 14px;
+    }
+
+
+
+    .show_sidebar aside .site_name:after
+    {
+        left: calc(100% + 8px);
+
+        width: 22px;
+        height: 44px;
+
+        border-top-width: 22px;
+        border-right-width: 22px;
+        border-bottom-width: 22px;
+    }
+
+
+
+    /*-----------------
+        Grid blocks
+    -----------------*/
+    .grid_blocks
+    {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grid_blocks .block.big_h
+    {
+        grid-row: auto;
+    }
+
+
+    .grid_blocks .block .title
+    {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+
+    .grid_blocks .block .type
+    {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+
+    .grid_blocks .block .amount .val
+    {
+        font-size: 56px;
+        line-height: 60px;
+
+        width: 152px;
+        height: 56px;
+    }
+
+
+    .grid_blocks .block .percents
+    {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+
+    .grid_blocks .block .status,
+    .grid_blocks .block .season,
+    .grid_blocks .block.crash .empty,
+    .grid_blocks .block.crash .list,
+    .grid_blocks .block .additionally
+    {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+
+    .grid_blocks .block.crash
+    {
+        grid-row: auto;
+        grid-column: 1 / 3;
+    }
+
+
+
+    /*------------
+        Charts
+    ------------*/
+    .charts .block .info
+    {
+        width: 260px;
+    }
+
+    .charts .block .title
+    {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .charts .block .temperature
+    {
+        font-size: 40px;
+        font-weight: 300;
+        line-height: 40px;
+
+        margin-top: 10px;
+    }
+
+    .charts .block .stats
+    {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+
+    .charts .block .chart
+    {
+        width: calc(100% - 300px);
+    }
+}
